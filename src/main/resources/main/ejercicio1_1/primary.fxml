@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="15" style="-fx-padding: 20;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ejercicio1_1.App">
+   <HBox spacing="10">
+      <Label text="Dinero:" />
+      <TextField fx:id="txtDinero" promptText="9999" />
+      <Button text="X" onAction="#limpiar" />
+      <Button text="Desglosar" onAction="#desglosar" />
+   </HBox>
+   <HBox spacing="20">
+      <VBox alignment="TOP_RIGHT" spacing="5">
+         <Label text="Billetes de $500" />
+         <Label text="Billetes de $200" />
+         <Label text="Billetes de $100" />
+         <Label text="Billetes de $50" />
+         <Label text="Billetes de $20" />
+         <Label text="Monedas de $10" />
+         <Label text="Monedas de $5" />
+         <Label text="Monedas de $2" />
+         <Label text="Monedas de $1" />
+      </VBox>
+      <VBox spacing="5">
+         <Label fx:id="lbl500" />
+         <Label fx:id="lbl200" />
+         <Label fx:id="lbl100" />
+         <Label fx:id="lbl50" />
+         <Label fx:id="lbl20" />
+         <Label fx:id="lbl10" />
+         <Label fx:id="lbl5" />
+         <Label fx:id="lbl2" />
+         <Label fx:id="lbl1" />
+      </VBox>
+   </HBox>
+</VBox>
